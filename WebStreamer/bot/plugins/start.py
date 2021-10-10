@@ -10,49 +10,45 @@ from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
 START_TEXT = """
-<i>👋 Hᴇʏ,</i>{}\n
-<i>I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ</i>\n
-<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
-<i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>
-<b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n\n
-<i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@AvishkarPatil</i>"""
+<b>Hey,</b>{}\n
+<b>I am Telly File streamer as well as direct link generator bot</i>\n
+<b>Use help 🆘 Command to know how to use me</b>\n
+<b><b>Made With 💕 By :</b>@Tellybots_4u</b>"""
 
 HELP_TEXT = """
-<i>- Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.</i>
-<i>- I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴇxᴛᴇʀɴᴀʟ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ !.</i>
-<i>- Aᴅᴅ Mᴇ ɪɴ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ Fᴏʀ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋs Bᴜᴛᴛᴏɴ</i>
-<i>- Tʜɪs Pᴇʀᴍᴇᴀɴᴛ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ</i>\n
-<u>🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u>\n
-<b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n
-<i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/Avishkarpatil'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>"""
+<b>- Send me Files or media from Telegram.</b>
+<b>- I will Provide you External Direct download linᴋ !.</b>
+<b>- Add me in your with admin and get direct download link</b>
+<b>- This is Permanent link With fastest Support</b>\n
+<b>👲 Botz Updates</i> <b>: <a href='https://t.me/tellybots_4u'>[ Click here ]</a></b>"""
 
 ABOUT_TEXT = """
-<b>⚜ Mʏ ɴᴀᴍᴇ : FileStreamX</b>\n
-<b>🔸Vᴇʀꜱɪᴏɴ : <a href='https://telegram.me/AvishkarPatil'>3.0.1</a></b>\n
-<b>🔹Sᴏᴜʀᴄᴇ : <a href='https://github.com/avipatilpro/FileStreamBot'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n
-<b>🔸GitHub : <a href='https://GitHub.com/avipatilpro'>Fᴏʟʟᴏᴡ</a></b>\n
-<b>🔹Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/Avishkarpatil'>Aᴠɪsʜᴋᴀʀ Pᴀᴛɪʟ</a></b>\n
-<b>🔸Lᴀꜱᴛ ᴜᴘᴅᴀᴛᴇᴅ : <a href='https://telegram.me/AvishkarPatil'>[ 11-ᴊᴜʟʏ-21 ] 04:35 PM</a></b>"""
+<b>🧒 My Name : TellyFilestreamerbot</b>\n
+<b>🤖 Version : <a href='https://telegram.me/tellybots_support'>3.0.1</a></b>\n
+<b>🚦 Sᴏᴜʀᴄᴇ : <a href='https://t.me/tellybots_4u'>Click here</a></b>\n
+<b>⚗️ Github : <a href='https://t.me/tellybots_digital'>Click here</a></b>\n
+<b>👲 Developer : <a href='https://telegram.me/tellybots_4u'>Tellybots_4u</a></b>\n
+<b>🎉 Last Updated : <a href='https://telegram.me/tellybots_digital'>[ 20-October-21 ] 04:35 PM</a></b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🆘 Help', callback_data='help'),
+        InlineKeyboardButton('👲 About', callback_data='about'),
+        InlineKeyboardButton('⛔ Close', callback_data='close')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('👲 About', callback_data='about'),
+        InlineKeyboardButton('⛔ Close', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('🆘 Help', callback_data='help'),
+        InlineKeyboardButton('⛔ Close', callback_data='close')
         ]]
     )
 
@@ -86,7 +82,7 @@ async def start(b, m):
         await db.add_user(m.from_user.id)
         await b.send_message(
             Var.BIN_CHANNEL,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ:** \n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{m.from_user.first_name}](tg://user?id={m.from_user.id}) __Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ !!__"
+            f"**New User Joined:** \n\nMy New Freind [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started your bot !!"
         )
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
@@ -96,7 +92,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Cᴏɴᴛᴀᴄᴛ ᴛʜᴇ Dᴇᴠᴇʟᴏᴘᴇʀ__\n\n @AvishkarPatil **Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                        text="Sorry sir, You are banned to use me. Contact my developer\n\n @Tellybots_4u **They will help you**",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -104,10 +100,10 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ 🔐</i>",
+                    text="<b>Join my Update Channel to use me 🔐</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("Join now 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ]]
                     ),
                     parse_mode="HTML"
@@ -116,7 +112,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<i>Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ</i> <b><a href='http://t.me/Avishkarpatil'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>",
+                    text="<b>Something Went Wrong Contact my developer</b> <b><a href='http://t.me/tellybots_4u'>[ Click here ]</a></b>",
                     parse_mode="HTML",
                     disable_web_page_preview=True)
                 return
@@ -135,7 +131,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ ᴄᴏɴᴛᴀᴄᴛ** @Avishkarpatil",
+                        text="**Sorry sir,you are banned to use me. ᴄᴏɴᴛᴀᴄᴛ my developer** @Tellybots_4u",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -143,10 +139,10 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴛʜɪs Bᴏᴛ**!\n\n**Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ**!",
+                    text="**Please Join my Update Channel to use me**!\n\n**Due to overload only channel Subscriber use me**!",
                     reply_markup=InlineKeyboardMarkup(
                         [[
-                          InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                          InlineKeyboardButton("🤖 Join my Update Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ]]
                     ),
                     parse_mode="markdown"
@@ -155,7 +151,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [Aᴠɪsʜᴋᴀʀ Pᴀᴛɪʟ](https://t.me/Avishkarpatil).",
+                    text="**Something went wrong. Cᴏntact my developer** [Tellybots_4u](https://t.me/tellybots_support).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -184,18 +180,17 @@ async def start(b, m):
                                      get_msg.message_id)
 
         msg_text ="""
-<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
-<i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@AvishkarPatil</b>
+<b><u>Your Link Generated 👇 !</b>\n
+<b>📂 File name :</b> <b>{}</b>\n
+<b>📦 File size :</b> <b>{}</b>\n
+<b>📥 Download :</b> <b>{}</b>\n
+<b>🧒 Made With 💕 :</i> <b>@Tellybots_4u</b>
 """
 
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="HTML",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📥", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download now 📥", url=stream_link)]])
         )
 
 
@@ -214,7 +209,7 @@ async def help_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ **\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot !!__"
+            f"**New user joined **\n\nNew Freind [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started Your Bot !!"
         )
     if Var.UPDATES_CHANNEL is not None:
         try:
@@ -222,7 +217,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="<i>Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Cᴏɴᴛᴀᴄᴛ ᴛʜᴇ Dᴇᴠᴇʟᴏᴘᴇʀ</i>",
+                    text="<b>Sᴏrry sir, Yᴏu are banned to use me. Cᴏntact my developer</b>",
                     parse_mode="HTML",
                     disable_web_page_preview=True
                 )
@@ -230,10 +225,10 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴛʜɪs Bᴏᴛ!**\n\n__Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ!__",
+                text="**Plese Join My Update Channel to use me!**\n\nDue to overload, Only Channel Subscriber ᴄan use me!",
                 reply_markup=InlineKeyboardMarkup(
                     [[
-                        InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                        InlineKeyboardButton("🤖 Join my Update Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]]
                 ),
                 parse_mode="markdown"
@@ -242,7 +237,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [Aᴠɪsʜᴋᴀʀ Pᴀᴛɪʟ](https://t.me/Avishkarpatil).",
+                text="Something went wrong. Cᴏntact my Developer [Tellybots_4u](https://t.me/tellybots_support).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
