@@ -26,7 +26,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @Avishkarpatil Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="Sorry sir, You are Banned ᴛo ᴜse ᴍe\n\n  **Contact my Developer @Tellybots_4u They will help you**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -34,9 +34,9 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="""<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ 🔐</i>""",
+                text="""<b>Join my Update Channel to use me 🔐</b>""",
                 reply_markup=InlineKeyboardMarkup(
-                    [[ InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}") ]]
+                    [[ InlineKeyboardButton("Jᴏin now🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}") ]]
                 ),
                 parse_mode="HTML"
             )
@@ -44,7 +44,7 @@ async def private_receive_handler(c: Client, m: Message):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** @Avishkarpatil",
+                text="**Something went wrong. Contact my developer** @Tellybots_support",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -71,12 +71,11 @@ async def private_receive_handler(c: Client, m: Message):
             file_name = f"{m.audio.file_name}"
 
         msg_text ="""
-<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ</b>\n
-<i>© @AvishkarPatil </i>"""
+<b>Your Link Generated 👇 !</b>\n
+<b>📂 File Name :</b> <b>{}</b>\n
+<b>📦 File size :</b> <b>{}</b>\n
+<b>📥 Dᴏwnload :</b> <i>{}</b>\n
+<b>© @Tellybots_4u </b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
@@ -104,8 +103,8 @@ async def channel_receive_handler(bot, broadcast):
                                     Var.PORT,
                                     log_msg.message_id)
         await log_msg.reply_text(
-            text=f"**Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream_link}",
-            # text=f"**Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** https://t.me/FxStreamBot?start=AvishkarPatil_{str(log_msg.message_id)}",
+            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel Id:** `{broadcast.chat.id}`\n**Request Url:** {stream_link}",
+            # text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel Id:** `{broadcast.chat.id}`\n**Request Url:** https://t.me/tellyfilestreamerbot?start=Tellybots_4u_{str(log_msg.message_id)}",
             quote=True,
             parse_mode="Markdown"
         )
@@ -113,8 +112,8 @@ async def channel_receive_handler(bot, broadcast):
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=stream_link)]])
-            # [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://t.me/FxStreamBot?start=AvishkarPatil_{str(log_msg.message_id)}")]])
+                [[InlineKeyboardButton("Dᴏwnload link 📥", url=stream_link)]])
+            # [[InlineKeyboardButton("Download link 📥", url=f"https://t.me/tellyfilestreamerbot?start=tellybots_4u_{str(log_msg.message_id)}")]])
         )
     except FloodWait as w:
         print(f"Sleeping for {str(w.x)}s")
@@ -123,5 +122,5 @@ async def channel_receive_handler(bot, broadcast):
                              text=f"Gᴏᴛ FʟᴏᴏᴅWᴀɪᴛ ᴏғ {str(w.x)}s from {broadcast.chat.title}\n\n**Cʜᴀɴɴᴇʟ ID:** `{str(broadcast.chat.id)}`",
                              disable_web_page_preview=True, parse_mode="Markdown")
     except Exception as e:
-        await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#ᴇʀʀᴏʀ_ᴛʀᴀᴄᴇʙᴀᴄᴋ:** `{e}`", disable_web_page_preview=True, parse_mode="Markdown")
+        await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#Error_Trackback:** `{e}`", disable_web_page_preview=True, parse_mode="Markdown")
         print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ: {e}")
